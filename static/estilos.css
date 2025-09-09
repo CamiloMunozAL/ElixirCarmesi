@@ -1,0 +1,92 @@
+body {
+    background-color: #f9d4e0;
+    color: #c2880c;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Transiciones generales */
+button, .btn, .card, .navbar, .nav-link, .navbar-brand, .card-img-top {
+    transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.navbar, .footer {
+    background-color: #4b0c1b !important;
+}
+
+.navbar-brand, .nav-link {
+    color: #e6b86a !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+h1, h2, h5.card-title {
+    color: #c1272d;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: #c1272d;
+    border-color: #c1272d;
+    color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(193,39,45,0.08);
+    transition: background 0.3s, border 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #a01e23;
+    border-color: #a01e23;
+    box-shadow: 0 4px 16px 0 rgba(193,39,45,0.18);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.btn-success {
+    background-color: #e6b86a;
+    border-color: #e6b86a;
+    color: #4b0c1b;
+    font-weight: bold;
+    box-shadow: 0 2px 8px 0 rgba(230,184,106,0.08);
+    transition: background 0.3s, border 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.btn-success:hover, .btn-success:focus {
+    background-color: #cfa44f;
+    border-color: #cfa44f;
+    color: #fff;
+    box-shadow: 0 4px 16px 0 rgba(230,184,106,0.18);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.card {
+    border: 1px solid #e6b86a;
+    background-color: #3a101a;
+    color: #f8e7c1;
+    box-shadow: 0 2px 8px 0 rgba(76,12,27,0.08);
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+.card:hover {
+    box-shadow: 0 8px 32px 0 rgba(193,39,45,0.18);
+    transform: translateY(-4px) scale(1.03);
+}
+.card img {
+    height: 250px;
+    object-fit: cover;
+    background: #fff;
+    transition: transform 0.3s;
+}
+.card:hover img {
+    transform: scale(1.05) rotate(-1deg);
+}
+.card-text.text-success {
+    color: #e6b86a !important;
+}
+
+footer {
+    background-color: #4b0c1b !important;
+    color: #e6b86a;
+}
