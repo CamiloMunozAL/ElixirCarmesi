@@ -2,9 +2,24 @@
 {% block title %}Inicio{% endblock %}
 
 {% block content %}
-<div class="text-center">
-    <h1 class="text-primary">Bienvenido a Elixir Carmesí 💄🧴</h1>
-    <p class="lead">Descubre nuestra línea de productos naturales y artesanales.</p>
-    <a href="/productos" class="btn btn-success btn-lg">Ver Productos</a>
+<div class="row align-items-center mb-5">
+    <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+        <h1 class="text-primary mb-3">Jabones Artesanales Elixir Carmesí</h1>
+        <p class="lead">Sumérgete en el mundo de la cosmética natural con nuestros jabones artesanales, elaborados a mano con ingredientes puros y aceites esenciales seleccionados. Cada barra es única y cuida tu piel de manera suave y efectiva.</p>
+        <ul class="list-unstyled mb-4">
+            <li>🌱 <b>Ingredientes naturales</b> y biodegradables</li>
+            <li>🧼 <b>Hidratación profunda</b> para todo tipo de piel</li>
+            <li>🌸 <b>Aromas relajantes</b> de aceites esenciales</li>
+            <li>♻️ <b>Sin químicos agresivos</b> ni conservantes artificiales</li>
+        </ul>
+        <a href="/productos" class="btn btn-success btn-lg">Ver Productos</a>
+    </div>
+    <div class="col-md-6 text-center">
+        <img src="{{ url_for('static', filename='img/imagen_base.png') }}" alt="Jabones artesanales Elixir Carmesí" class="img-fluid rounded shadow" style="max-height:340px; object-fit:cover;">
+    </div>
+</div>
+<div class="text-center mt-5">
+    <h2 class="mb-3">¿Por qué elegir nuestros jabones?</h2>
+    <p class="mb-0">Porque creemos en el poder de la naturaleza para cuidar tu piel. Nuestros jabones son el resultado de pasión, conocimiento y respeto por el medio ambiente. ¡Descubre la diferencia de lo artesanal!</p>
 </div>
 {% endblock %}
