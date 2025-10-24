@@ -567,7 +567,7 @@ img {
   }
 
   /* Grid de productos móvil */
-  .row > [class*='col-'] {
+  .row > [class*="col-"] {
     margin-bottom: 1rem;
   }
 }
