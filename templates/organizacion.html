@@ -13,11 +13,11 @@ endblock %} {% block content %}
       Representación jerárquica de nuestra empresa artesanal de cosmética
       natural.
     </p>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center mb-4">
       <img
         src="{{ url_for('static', filename='img/organigrama.png') }}"
         alt="Organigrama Elixir Carmesí"
-        class="img-fluid rounded shadow-lg"
+        class="organigrama-img shadow-lg"
       />
     </div>
   </section>
@@ -200,11 +200,11 @@ endblock %} {% block content %}
       Diagrama de macroprocesos de Elixir Carmesí mostrando la interrelación
       entre las áreas estratégicas, misionales y de apoyo.
     </p>
-    <div class="shadow-sm p-4 mt-4">
+    <div class="d-flex justify-content-center mt-4">
       <img
         src="{{ url_for('static', filename='img/macroproceso.png') }}"
         alt="Macroproceso Elixir Carmesí"
-        class="img-fluid rounded shadow-lg"
+        class="macroproceso-img shadow-lg"
       />
     </div>
   </section>
