@@ -1,21 +1,31 @@
 {% extends "base.html" %}
-{% block title %}Productos{% endblock %}
+{% block title %}Productos - Elixir Carmesí{% endblock %}
 
 {% block content %}
-<h2 class="mb-4">Nuestros productos</h2>
+<div class="text-center mb-5">
+    <h1 class="mb-3">Nuestros Productos</h1>
+    <p class="lead">Jabones artesanales y geles corporales elaborados a base de extracto de remolacha.<br>
+    Donde la naturaleza y la sofisticación se encuentran.</p>
+</div>
+
 <div class="row">
     {% for producto in productos %}
-    <div class="col-md-4 mb-4">
-        <div class="card shadow-sm">
-            <img src="{{ url_for('static', filename='img/' + producto.imagen) }}" class="card-img-top" alt="{{ producto.nombre }}">
-            <div class="card-body text-center">
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-sm h-100">
+            <img src="{{ url_for('static', filename='img/' + producto.imagen) }}" class="card-img-top img-fluid" alt="{{ producto.nombre }}">
+            <div class="card-body text-center d-flex flex-column">
                 <h5 class="card-title">{{ producto.nombre }}</h5>
-                <p class="card-text text-success fw-bold">${{ producto.precio }}</p>
-                <p class="card-text">{{ producto.descripcion }}</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <p class="card-text text-success fw-bold fs-5">${{ "{:,.0f}".format(producto.precio) }}</p>
+                <p class="card-text flex-grow-1">{{ producto.descripcion }}</p>
+                <a href="{{ url_for('producto_detalle', id=producto.id) }}" class="btn btn-primary mt-auto">Ver Detalles</a>
             </div>
         </div>
     </div>
     {% endfor %}
+</div>
+
+<div class="text-center mt-5 mb-4">
+    <p class="lead">Todos nuestros productos son elaborados artesanalmente con ingredientes naturales y extracto de remolacha.<br>
+    <strong>Belleza que nace desde la raíz.</strong></p>
 </div>
 {% endblock %}

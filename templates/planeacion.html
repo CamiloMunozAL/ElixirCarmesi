@@ -1,0 +1,287 @@
+{% extends "base.html" %} {% block title %}Planeación Estratégica - Elixir
+Carmesí{% endblock %} {% block content %}
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h1 class="text-danger fw-bold">Planeación Estratégica</h1>
+    <p class="lead text-muted">Definición estratégica de Elixir Carmesí</p>
+    <hr class="mx-auto" style="width: 120px; border-top: 4px solid #e6b86a" />
+  </div>
+
+  <div class="text-center mb-5">
+    <img
+      src="{{ url_for('static', filename='img/logo.jpg') }}"
+      alt="Logo Elixir Carmesí"
+      class="rounded-circle shadow mb-3"
+      style="width: 120px; height: 120px; object-fit: cover"
+    />
+    <h1 class="fw-bold text-danger">Elixir Carmesí</h1>
+    <p class="fs-5 text-muted fst-italic">"Belleza que nace desde la raíz"</p>
+    <hr class="mx-auto" style="width: 120px; border-top: 4px solid #e6b86a" />
+    <p class="text-muted small">
+      Universidad Tecnológica de Pereira - Administración I<br />
+      Juan Esteban Castañeda Medina • Jennifer Morales Vallejo • Tatiana Ochoa
+      Pérez
+    </p>
+  </div>
+
+  <section class="mb-5">
+    <h3 class="text-primary">Definición del Producto</h3>
+    <div class="card shadow-sm p-4">
+      <p class="lead">
+        Nuestros productos son
+        <strong>jabones artesanales y geles corporales</strong> elaborados a
+        base de <strong>extracto de remolacha</strong>, que combina el poder de
+        los ingredientes naturales con un diseño sofisticado y exclusivo.
+      </p>
+    </div>
+  </section>
+
+  <div class="row mt-5 mb-4">
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title text-primary">Nuestra Misión</h3>
+          <p class="card-text">
+            Creamos productos artesanales de cuidado personal inspirados en la
+            remolacha, donde la naturaleza y sofisticación se encuentran para
+            brindar bienestar y confianza a nuestros empleados y socios. Nos
+            mueve el compromiso con la calidad y el respeto por el entorno,
+            generando experiencias únicas a nuestros clientes que reflejan
+            elegancia, conciencia y autenticidad.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title text-primary">Nuestra Visión</h3>
+          <p class="card-text">
+            En el 2030, nuestra empresa será reconocida en Pereira y en el Eje
+            Cafetero como una marca referente en cosmética artesanal y natural,
+            destacada por la innovación en el uso de la remolacha como
+            ingrediente distintivo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-5">
+    <h2 class="mb-4">Nuestros Valores Corporativos</h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Responsabilidad</h5>
+            <p class="card-text">
+              Mantenemos un compromiso ético con nuestros clientes, proveedores
+              y empleados. Promoviendo prácticas sostenibles y justas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Puntualidad</h5>
+            <p class="card-text">
+              Cumplimos con los tiempos acordados en nuestras entregas y
+              procesos, garantizando eficacia y confianza en nuestros servicios.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Excelencia</h5>
+            <p class="card-text">
+              Buscamos siempre superar las expectativas, ofreciendo una
+              experiencia única a nuestros clientes, cuidando cada detalle en lo
+              que hacemos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Autenticidad</h5>
+            <p class="card-text">
+              Creamos productos naturales y artesanales con identidad propia,
+              reflejando elegancia y naturalidad, diferenciándonos en el
+              mercado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h3 class="text-primary mb-4">Análisis DOFA</h3>
+
+    <!-- Análisis Interno -->
+    <h4 class="text-danger mb-3">Análisis Interno</h4>
+    <div class="table-responsive shadow-sm mb-5">
+      <table class="table table-bordered align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th style="width: 25%">Factores</th>
+            <th style="width: 37.5%">Fortalezas</th>
+            <th style="width: 37.5%">Debilidades</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fw-bold">Económico</td>
+            <td></td>
+            <td>Capital inicial limitado para la producción</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Precio</td>
+            <td>
+              Posibilidad de manejar precios diferenciadores por la idea de
+              producto y marca
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Calidad</td>
+            <td>
+              Producto con ingredientes naturales, procesos artesanales y un
+              sello distintivo
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Empleados</td>
+            <td>
+              El equipo fundador cuenta con conocimiento en procesos químicos
+              facilitando su elaboración
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Infraestructura</td>
+            <td></td>
+            <td>
+              Recursos limitados para contar con espacios y equipos adecuados
+              para la producción inicial
+            </td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Producto</td>
+            <td>
+              Innovador y distintivo en el mercado gracias al uso de remolacha
+              como materia prima
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Análisis Externo -->
+    <h4 class="text-danger mb-3">Análisis Externo</h4>
+    <div class="table-responsive shadow-sm">
+      <table class="table table-bordered align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th style="width: 25%">Factores</th>
+            <th style="width: 37.5%">Oportunidades</th>
+            <th style="width: 37.5%">Amenazas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fw-bold">Económico</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Competencia</td>
+            <td></td>
+            <td>
+              Existencia de marcas de cosméticas naturales con más trayectoria y
+              reconocimiento en el mercado
+            </td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Proveedores</td>
+            <td>
+              Alianza con agrícolas locales de remolacha y materias primas
+              naturales
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Clientes</td>
+            <td>
+              Creciente interés por productos naturales, artesanales y
+              sostenibles
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Socio Cultural</td>
+            <td>
+              Mayor conciencia sobre el cuidado del ecosistema y el cuidado de
+              la piel favoreciendo la aceptación
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Tecnología</td>
+            <td>
+              Acceso a plataformas digitales de venta y marketing por redes
+              sociales
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Ambiental</td>
+            <td>La tendencia hacia el consumo responsable y ecofriendly</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Fuerzas naturales</td>
+            <td></td>
+            <td>
+              Las variaciones climáticas pueden afectar la producción agrícola
+              de la remolacha y disponibilidad de insumos
+            </td>
+          </tr>
+          <tr>
+            <td class="fw-bold">
+              Conocimiento, político-legal, oferta educativa
+            </td>
+            <td></td>
+            <td>
+              Regulaciones estrictas en el sector cosmético que pueden aumentar
+              costos o requerir mayor inversión
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- Llamado a la acción -->
+  <section class="text-center mt-5 bg-light p-5 rounded shadow-sm">
+    <h3 class="fw-bold text-danger mb-3">
+      Descubre la Belleza que Nace desde la Raíz
+    </h3>
+    <p class="lead mb-4">
+      Explora nuestra colección de jabones artesanales y geles corporales
+      elaborados con extracto de remolacha. Productos hechos con amor, ciencia y
+      respeto por la naturaleza.
+    </p>
+    <div class="d-flex gap-3 justify-content-center flex-wrap">
+      <a href="/productos" class="btn btn-success btn-lg shadow"
+        >Ver Productos</a
+      >
+    </div>
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}Página no encontrada{% endblock %} {%
+block content %}
+<div class="container text-center py-5">
+  <h1 class="display-3 text-danger fw-bold">404</h1>
+  <h2 class="mb-3 text-primary">¡Oops! Página no encontrada</h2>
+  <p class="lead mb-4">
+    Lo sentimos, la página que estás buscando no existe o fue movida. Es posible
+    que el enlace esté roto o hayas escrito mal la dirección.
+  </p>
+
+  <img
+    src="{{ url_for('static', filename='img/logo.jpg') }}"
+    alt="Logo Elixir Carmesí"
+    class="rounded-circle shadow mb-4"
+    style="width: 120px; height: 120px; object-fit: cover"
+  />
+
+  <div>
+    <a href="/" class="btn btn-success btn-lg me-2">Volver al inicio</a>
+    <a href="/productos" class="btn btn-primary btn-lg">Ver productos</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,212 @@
+{% extends "base.html" %} {% block title %}Organización - Elixir Carmesí{%
+endblock %} {% block content %}
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h1 class="text-danger fw-bold">Organización Empresarial</h1>
+    <p class="lead text-muted">Estructura organizacional de Elixir Carmesí</p>
+    <hr class="mx-auto" style="width: 120px; border-top: 4px solid #e6b86a" />
+  </div>
+
+  <section class="mb-5 text-center">
+    <h3 class="text-primary">Organigrama</h3>
+    <p class="lead">
+      Representación jerárquica de nuestra empresa artesanal de cosmética
+      natural.
+    </p>
+    <div class="d-flex justify-content-center">
+      <img
+        src="{{ url_for('static', filename='img/organigrama.png') }}"
+        alt="Organigrama Elixir Carmesí"
+        class="img-fluid rounded shadow-lg"
+      />
+    </div>
+  </section>
+
+  <section>
+    <h3 class="text-primary mb-3">Perfiles de Cargos</h3>
+    <div class="table-responsive shadow-sm">
+      <table class="table table-hover align-middle table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Cargo</th>
+            <th>Estudios</th>
+            <th>Género</th>
+            <th>Experiencia</th>
+            <th>Funciones</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fw-bold">Jefe Administrativo</td>
+            <td>Administración de Empresas, Contaduría</td>
+            <td>Indistinto</td>
+            <td>Mínimo 3 años en gestión administrativa o financiera</td>
+            <td>
+              • Planificar, dirigir y controlar las actividades administrativas
+              y contables<br />
+              • Elaborar presupuestos y controlar gastos<br />
+              • Coordinar con producción, logística y ventas<br />
+              • Gestionar pagos, nómina y obligaciones legales
+            </td>
+            <td>28 – 45 años</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Asistente Administrativo</td>
+            <td>
+              Técnico o tecnólogo en gestión administrativa o contabilidad
+            </td>
+            <td>Indistinto</td>
+            <td>1 año en labores administrativas o de oficina</td>
+            <td>
+              • Apoyar al jefe administrativo en documentación y reportes<br />
+              • Manejar archivo, facturación y correspondencia<br />
+              • Atender llamadas, correos y atención básica a clientes o
+              proveedores
+            </td>
+            <td>22 – 35 años</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Jefe de Producción</td>
+            <td>
+              Profesional en Ingeniería Química, Química Industrial o afines
+            </td>
+            <td>Indistinto</td>
+            <td>2 años en procesos de producción cosmética o alimentaria</td>
+            <td>
+              • Planificar y supervisar la producción de jabones y geles<br />
+              • Controlar insumos, tiempos y eficiencia del proceso<br />
+              • Garantizar cumplimiento de normas sanitarias y de seguridad<br />
+              • Coordinar al equipo de operarios
+            </td>
+            <td>27 – 45 años</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Supervisor de Calidad</td>
+            <td>
+              Profesional o tecnólogo en Química, Control de Calidad o afines
+            </td>
+            <td>Indistinto</td>
+            <td>1 a 2 años en control de calidad o laboratorio</td>
+            <td>
+              • Verificar cumplimiento de estándares de calidad en materias
+              primas y productos finales<br />
+              • Tomar muestras y realizar pruebas físico-químicas básicas<br />
+              • Llevar registros de control y reportar desviaciones
+            </td>
+            <td>25 – 40 años</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Operarios de Producción</td>
+            <td>
+              Bachiller o técnico en procesos industriales o de manufactura
+            </td>
+            <td>Indistinto</td>
+            <td>Deseable 1 año en trabajos manuales o de planta</td>
+            <td>
+              • Ejecutar las tareas de mezcla, moldeado, envasado y empaque<br />
+              • Mantener el área limpia y organizada<br />
+              • Cumplir protocolos de seguridad y calidad
+            </td>
+            <td>20 – 40 años</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Químico de Desarrollo</td>
+            <td>Profesional en Química o Química Industrial</td>
+            <td>Indistinto</td>
+            <td>2 años en formulación o desarrollo de productos cosméticos</td>
+            <td>
+              • Desarrollar nuevas fórmulas y ajustar las existentes<br />
+              • Evaluar estabilidad, textura y pH de los productos<br />
+              • Documentar fichas técnicas y procesos de elaboración
+            </td>
+            <td>25 – 45 años</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Community Manager</td>
+            <td>
+              Profesional o tecnólogo en Comunicación, Marketing Digital o
+              afines
+            </td>
+            <td>Indistinto</td>
+            <td>1 año en manejo de redes sociales y campañas publicitarias</td>
+            <td>
+              • Gestionar las redes sociales de la marca<br />
+              • Crear contenido visual y promocional<br />
+              • Atender consultas digitales y fomentar comunidad
+            </td>
+            <td>22 – 35 años</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Coordinador de Talento Humano</td>
+            <td>
+              Profesional en Psicología, Administración o Gestión del Talento
+              Humano
+            </td>
+            <td>Indistinto</td>
+            <td>2 años en procesos de selección, bienestar y capacitación</td>
+            <td>
+              • Coordinar selección y contratación de personal<br />
+              • Diseñar programas de bienestar y motivación<br />
+              • Llevar control de asistencia y desempeño
+            </td>
+            <td>25 – 45 años</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Jefe de Logística</td>
+            <td>
+              Profesional en Logística, Administración o Ingeniería Industrial
+            </td>
+            <td>Indistinto</td>
+            <td>3 años en gestión de inventarios y distribución</td>
+            <td>
+              • Planificar rutas de entrega y control de inventario<br />
+              • Coordinar despacho y recepción de mercancías<br />
+              • Optimizar procesos de transporte y almacenamiento
+            </td>
+            <td>28 – 45 años</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Auxiliar de Logística</td>
+            <td>Técnico o tecnólogo en logística o afines</td>
+            <td>Indistinto</td>
+            <td>1 año en almacenamiento o despacho</td>
+            <td>
+              • Apoyar en embalaje, rotulado y cargue/descargue<br />
+              • Mantener registros de inventario<br />
+              • Asegurar el orden en bodega
+            </td>
+            <td>20 – 35 años</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Coordinador de Envíos</td>
+            <td>Técnico o tecnólogo en logística o comercio</td>
+            <td>Indistinto</td>
+            <td>1 año en gestión de despachos y atención al cliente</td>
+            <td>
+              • Coordinar entregas locales y nacionales<br />
+              • Realizar seguimiento a pedidos y transporte<br />
+              • Atender reclamos o devoluciones de clientes
+            </td>
+            <td>23 – 40 años</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="mb-5 text-center">
+    <h3 class="text-primary">Macroproceso</h3>
+    <p class="lead">
+      Diagrama de macroprocesos de Elixir Carmesí mostrando la interrelación
+      entre las áreas estratégicas, misionales y de apoyo.
+    </p>
+    <div class="shadow-sm p-4 mt-4">
+      <img
+        src="{{ url_for('static', filename='img/macroproceso.png') }}"
+        alt="Macroproceso Elixir Carmesí"
+        class="img-fluid rounded shadow-lg"
+      />
+    </div>
+  </section>
+</div>
+{% endblock %}

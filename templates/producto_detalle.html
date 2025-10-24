@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}{{ producto.nombre }} - Elixir Carmesí{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center mb-4 mb-md-0">
+      <img src="{{ url_for('static', filename='img/' + producto.imagen) }}" 
+           class="img-fluid rounded shadow-lg" 
+           alt="{{ producto.nombre }}"
+           style="max-height: 450px; object-fit: cover;">
+    </div>
+    <div class="col-md-6">
+      <h1 class="text-primary mb-3">{{ producto.nombre }}</h1>
+      <p class="text-success fw-bold fs-3 mb-3">${{ "{:,.0f}".format(producto.precio) }}</p>
+      <p class="lead mb-4">{{ producto.descripcion }}</p>
+      
+      <div class="alert alert-info">
+        <strong>✨ Producto artesanal</strong> elaborado con extracto de remolacha e ingredientes naturales de alta calidad.
+      </div>
+      
+      <div class="mb-4">
+        <h5 class="text-primary">Características:</h5>
+        <ul>
+          <li>🌱 100% natural y artesanal</li>
+          <li>🧼 Con extracto de remolacha</li>
+          <li>♻️ Libre de químicos agresivos</li>
+          <li>✨ Diseño sofisticado y exclusivo</li>
+        </ul>
+      </div>
+      
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="/productos" class="btn btn-outline-secondary">← Volver a Productos</a>
+        <a href="#" class="btn btn-primary btn-lg">Comprar Ahora</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mt-5">
+    <div class="col-12">
+      <h3 class="text-primary mb-3">Sobre Elixir Carmesí</h3>
+      <p>En Elixir Carmesí creamos productos artesanales de cuidado personal inspirados en la remolacha, combinando naturaleza y sofisticación para brindar bienestar y confianza. Nuestro compromiso es con la calidad, el respeto por el entorno y la generación de experiencias únicas que reflejan elegancia, conciencia y autenticidad.</p>
+      <p class="fst-italic text-muted"><strong>Belleza que nace desde la raíz.</strong></p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,25 +1,72 @@
-{% extends "base.html" %}
-{% block title %}Inicio{% endblock %}
-
+{% extends "base.html" %} {% block title %}Inicio - Elixir Carmesí{% endblock %}
 {% block content %}
 <div class="row align-items-center mb-5">
-    <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
-        <h1 class="text-primary mb-3">Jabones Artesanales Elixir Carmesí</h1>
-        <p class="lead">Sumérgete en el mundo de la cosmética natural con nuestros jabones artesanales, elaborados a mano con ingredientes puros y aceites esenciales seleccionados. Cada barra es única y cuida tu piel de manera suave y efectiva.</p>
-        <ul class="list-unstyled mb-4">
-            <li>🌱 <b>Ingredientes naturales</b> y biodegradables</li>
-            <li>🧼 <b>Hidratación profunda</b> para todo tipo de piel</li>
-            <li>🌸 <b>Aromas relajantes</b> de aceites esenciales</li>
-            <li>♻️ <b>Sin químicos agresivos</b> ni conservantes artificiales</li>
-        </ul>
-        <a href="/productos" class="btn btn-success btn-lg">Ver Productos</a>
-    </div>
-    <div class="col-md-6 text-center">
-        <img src="{{ url_for('static', filename='img/imagen_base.png') }}" alt="Jabones artesanales Elixir Carmesí" class="img-fluid rounded shadow" style="max-height:340px; object-fit:cover;">
-    </div>
+  <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+    <h1 class="text-primary mb-3">Elixir Carmesí</h1>
+    <p class="lead fw-bold text-muted" style="font-size: 1.2rem">
+      Belleza que nace desde la raíz
+    </p>
+    <p class="lead">
+      Descubre nuestros productos artesanales de cuidado personal elaborados a
+      base de <strong>extrato de remolacha</strong>, donde la naturaleza y la
+      sofisticación se encuentran para brindar bienestar y confianza.
+    </p>
+    <ul class="list-unstyled mb-4">
+      <li>🌱 <b>Ingredientes naturales</b> con extracto de remolacha</li>
+      <li>🧼 <b>Jabones artesanales y geles corporales</b> de alta calidad</li>
+      <li>✨ <b>Diseño sofisticado y exclusivo</b></li>
+      <li>♻️ <b>Compromiso con el entorno</b> y prácticas sostenibles</li>
+    </ul>
+    <a href="/productos" class="btn btn-success btn-lg">Ver Productos</a>
+  </div>
+  <div class="col-md-6 text-center">
+    <img
+      src="{{ url_for('static', filename='img/imagen_base.png') }}"
+      alt="Productos Elixir Carmesí - Belleza que nace desde la raíz"
+      class="img-fluid rounded shadow"
+      style="max-height: 340px; object-fit: cover"
+    />
+  </div>
 </div>
-<div class="text-center mt-5">
-    <h2 class="mb-3">¿Por qué elegir nuestros jabones?</h2>
-    <p class="mb-0">Porque creemos en el poder de la naturaleza para cuidar tu piel. Nuestros jabones son el resultado de pasión, conocimiento y respeto por el medio ambiente. ¡Descubre la diferencia de lo artesanal!</p>
+
+<div class="row mt-5 mb-4">
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 border-0 shadow-sm">
+      <div class="card-body">
+        <h3 class="card-title text-primary">Nuestra Misión</h3>
+        <p class="card-text">
+          Creamos productos artesanales de cuidado personal inspirados en la
+          remolacha, donde la naturaleza y sofisticación se encuentran para
+          brindar bienestar y confianza a nuestros empleados y socios. Nos mueve
+          el compromiso con la calidad y el respeto por el entorno, generando
+          experiencias únicas a nuestros clientes que reflejan elegancia,
+          conciencia y autenticidad.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 border-0 shadow-sm">
+      <div class="card-body">
+        <h3 class="card-title text-primary">Nuestra Visión</h3>
+        <p class="card-text">
+          En el 2030, nuestra empresa será reconocida en Pereira y en el Eje
+          Cafetero como una marca referente en cosmética artesanal y natural,
+          destacada por la innovación en el uso de la remolacha como ingrediente
+          distintivo.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center mt-5 mb-4">
+  <h2 class="mb-3">¿Por qué elegir Elixir Carmesí?</h2>
+  <p class="lead mb-0">
+    Porque creemos en el poder de la remolacha y los ingredientes naturales para
+    cuidar tu piel. Nuestros productos son el resultado de pasión, innovación y
+    respeto por el medio ambiente. Experimenta la combinación perfecta entre
+    naturaleza y sofisticación.
+  </p>
 </div>
 {% endblock %}
