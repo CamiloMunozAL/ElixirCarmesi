@@ -1,72 +1,189 @@
 {% extends "base.html" %} {% block title %}Inicio - Elixir Carmesí{% endblock %}
 {% block content %}
-<div class="row align-items-center mb-5">
-  <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
-    <h1 class="text-primary mb-3">Elixir Carmesí</h1>
-    <p class="lead fw-bold text-muted" style="font-size: 1.2rem">
+
+<!-- Hero Section con Imagen de Fondo y Slogan -->
+<section class="position-relative text-center text-white py-5 mb-5">
+  <img
+    src="{{ url_for('static', filename='img/jabonCarmesi.jpg') }}"
+    alt="Elixir Carmesí - Jabones Artesanales"
+    class="position-absolute top-0 start-0 w-100 h-100"
+    style="object-fit: cover; z-index: -1; opacity: 0.7; min-height: 500px"
+  />
+  <div
+    class="container position-relative"
+    style="
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    "
+  >
+    <h1
+      class="display-3 fw-bold mb-3 text-dark"
+      style="text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8)"
+    >
+      Elixir Carmesí
+    </h1>
+    <p
+      class="display-6 fst-italic mb-4 text-dark"
+      style="text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8)"
+    >
       Belleza que nace desde la raíz
     </p>
-    <p class="lead">
-      Descubre nuestros productos artesanales de cuidado personal elaborados a
-      base de <strong>extrato de remolacha</strong>, donde la naturaleza y la
-      sofisticación se encuentran para brindar bienestar y confianza.
+    <a href="/productos" class="btn btn-success btn-lg px-5 py-3 shadow">
+      Descubre Nuestros Productos
+    </a>
+  </div>
+</section>
+
+<!-- Sección de Valores -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <div class="p-4">
+          <div class="mb-3">
+            <img
+              src="{{ url_for('static', filename='img/icono-natural.png') }}"
+              alt="Ingredientes Naturales"
+              width="64"
+              height="64"
+              style="object-fit: contain"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            />
+            <span style="display: none; font-size: 64px">🌱</span>
+          </div>
+          <h4 class="fw-bold" style="color: #8b0000">Ingredientes Naturales</h4>
+          <p class="text-muted">
+            Elaborados con extracto de remolacha y aceites esenciales puros,
+            libres de químicos agresivos.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4">
+          <div class="mb-3">
+            <img
+              src="{{ url_for('static', filename='img/icono-artesanal.png') }}"
+              alt="Cuidado Artesanal"
+              width="64"
+              height="64"
+              style="object-fit: contain"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            />
+            <span style="display: none; font-size: 64px">💚</span>
+          </div>
+          <h4 class="fw-bold" style="color: #8b0000">Cuidado Artesanal</h4>
+          <p class="text-muted">
+            Cada producto es elaborado a mano con dedicación, amor y atención a
+            cada detalle del proceso.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4">
+          <div class="mb-3">
+            <img
+              src="{{ url_for('static', filename='img/icono-sostenible.png') }}"
+              alt="Sofisticación Sostenible"
+              width="64"
+              height="64"
+              style="object-fit: contain"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            />
+            <span style="display: none; font-size: 64px">💎</span>
+          </div>
+          <h4 class="fw-bold" style="color: #8b0000">
+            Sofisticación Sostenible
+          </h4>
+          <p class="text-muted">
+            Diseño elegante y exclusivo con compromiso ambiental y prácticas
+            responsables.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Productos Destacados -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold mb-3" style="color: #8b0000">
+        Descubre Nuestros Productos
+      </h2>
+      <p class="lead text-muted">
+        Jabones artesanales y geles corporales elaborados con extracto de
+        remolacha
+      </p>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4">
+        <img
+          src="{{ url_for('static', filename='img/imagen_base.png') }}"
+          alt="Productos Elixir Carmesí"
+          class="img-fluid rounded shadow"
+          style="max-height: 400px; width: 100%; object-fit: cover"
+        />
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3 class="mb-4" style="color: #8b0000">
+          ¿Por qué elegir Elixir Carmesí?
+        </h3>
+        <ul class="list-unstyled">
+          <li class="mb-3 d-flex align-items-start">
+            <span class="me-3 fs-4">🌱</span>
+            <div>
+              <strong>Ingredientes 100% naturales:</strong> Extracto de
+              remolacha, aceites esenciales y materias primas orgánicas.
+            </div>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <span class="me-3 fs-4">✨</span>
+            <div>
+              <strong>Proceso artesanal:</strong> Cada producto es único,
+              elaborado con dedicación y experiencia.
+            </div>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <span class="me-3 fs-4">♻️</span>
+            <div>
+              <strong>Compromiso ambiental:</strong> Prácticas sostenibles y
+              respeto por el medio ambiente.
+            </div>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <span class="me-3 fs-4">💎</span>
+            <div>
+              <strong>Diseño sofisticado:</strong> Elegancia y naturalidad en
+              cada presentación.
+            </div>
+          </li>
+        </ul>
+        <a href="/productos" class="btn btn-primary btn-lg mt-3"
+          >Ver Todos los Productos</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Llamado a la Acción -->
+<section class="py-5 text-center" style="background-color: #f5e6d3">
+  <div class="container">
+    <h3 class="fw-bold mb-3" style="color: #8b0000">
+      Experimenta la Diferencia Natural
+    </h3>
+    <p class="lead mb-4">
+      Cuida tu piel con productos que combinan naturaleza, innovación y
+      sofisticación.
     </p>
-    <ul class="list-unstyled mb-4">
-      <li>🌱 <b>Ingredientes naturales</b> con extracto de remolacha</li>
-      <li>🧼 <b>Jabones artesanales y geles corporales</b> de alta calidad</li>
-      <li>✨ <b>Diseño sofisticado y exclusivo</b></li>
-      <li>♻️ <b>Compromiso con el entorno</b> y prácticas sostenibles</li>
-    </ul>
-    <a href="/productos" class="btn btn-success btn-lg">Ver Productos</a>
+    <a href="/productos" class="btn btn-success btn-lg px-5 py-3 shadow"
+      >Comprar Ahora</a
+    >
   </div>
-  <div class="col-md-6 text-center">
-    <img
-      src="{{ url_for('static', filename='img/imagen_base.png') }}"
-      alt="Productos Elixir Carmesí - Belleza que nace desde la raíz"
-      class="img-fluid rounded shadow"
-      style="max-height: 340px; object-fit: cover"
-    />
-  </div>
-</div>
+</section>
 
-<div class="row mt-5 mb-4">
-  <div class="col-md-6 mb-4">
-    <div class="card h-100 border-0 shadow-sm">
-      <div class="card-body">
-        <h3 class="card-title text-primary">Nuestra Misión</h3>
-        <p class="card-text">
-          Creamos productos artesanales de cuidado personal inspirados en la
-          remolacha, donde la naturaleza y sofisticación se encuentran para
-          brindar bienestar y confianza a nuestros empleados y socios. Nos mueve
-          el compromiso con la calidad y el respeto por el entorno, generando
-          experiencias únicas a nuestros clientes que reflejan elegancia,
-          conciencia y autenticidad.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 mb-4">
-    <div class="card h-100 border-0 shadow-sm">
-      <div class="card-body">
-        <h3 class="card-title text-primary">Nuestra Visión</h3>
-        <p class="card-text">
-          En el 2030, nuestra empresa será reconocida en Pereira y en el Eje
-          Cafetero como una marca referente en cosmética artesanal y natural,
-          destacada por la innovación en el uso de la remolacha como ingrediente
-          distintivo.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="text-center mt-5 mb-4">
-  <h2 class="mb-3">¿Por qué elegir Elixir Carmesí?</h2>
-  <p class="lead mb-0">
-    Porque creemos en el poder de la remolacha y los ingredientes naturales para
-    cuidar tu piel. Nuestros productos son el resultado de pasión, innovación y
-    respeto por el medio ambiente. Experimenta la combinación perfecta entre
-    naturaleza y sofisticación.
-  </p>
-</div>
 {% endblock %}

@@ -8,9 +8,9 @@ descr_gel = "Gel corporal con extracto de remolacha que nutre y revitaliza tu pi
 
 # Lista de productos con nombres de clave en español para coincidir con la plantilla
 productos =[
-  {"id":1, "nombre":"Jabón Remolacha Clásico", "precio": 15000,"imagen":"producto_a.jpg", "descripcion": descr_jabon, "tipo": "jabón"},
-  {"id":2, "nombre":"Jabón Remolacha & Lavanda", "precio": 18000,"imagen":"producto_b.jpg", "descripcion": "Jabón artesanal de remolacha con aceite esencial de lavanda. Calma y relaja mientras cuida tu piel con ingredientes 100% naturales.", "tipo": "jabón"},
-  {"id":3, "nombre":"Gel Corporal Remolacha", "precio": 25000,"imagen":"producto_c.jpg", "descripcion": descr_gel, "tipo": "gel"},
+  {"id":1, "nombre":"Jabón Remolacha Clásico", "precio": 15000,"imagen":"jabonRemolachaClasico.png", "descripcion": descr_jabon, "tipo": "jabón"},
+  {"id":2, "nombre":"Jabón Remolacha & Lavanda", "precio": 18000,"imagen":"jabonRemolachaLavanda.png", "descripcion": "Jabón artesanal de remolacha con aceite esencial de lavanda. Calma y relaja mientras cuida tu piel con ingredientes 100% naturales.", "tipo": "jabón"},
+  {"id":3, "nombre":"Gel Corporal Remolacha", "precio": 25000,"imagen":"gelCorporalRemolacha.png", "descripcion": descr_gel, "tipo": "gel"},
   {"id":4, "nombre":"Jabón Remolacha & Miel", "precio": 20000,"imagen":"producto_c.jpg", "descripcion": "Combinación perfecta de extracto de remolacha y miel pura. Hidrata intensamente y deja tu piel suave y luminosa.", "tipo": "jabón"},
   {"id":5, "nombre":"Jabón Exfoliante Remolacha", "precio": 22000,"imagen":"producto_c.jpg", "descripcion": "Jabón artesanal con extracto de remolacha y partículas exfoliantes naturales. Renueva y suaviza tu piel delicadamente.", "tipo": "jabón"},
   {"id":6, "nombre":"Gel Remolacha & Aloe Vera", "precio": 28000,"imagen":"producto_c.jpg", "descripcion": "Gel corporal que combina remolacha y aloe vera para una hidratación superior. Refresca y nutre tu piel naturalmente.", "tipo": "gel"},
