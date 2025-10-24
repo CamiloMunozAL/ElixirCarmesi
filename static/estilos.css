@@ -372,6 +372,30 @@ section h3::after {
   padding-bottom: 0.2rem;
 }
 
+/* Asegurar que las tablas sean scrolleables en móviles */
+.table-responsive {
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Asegurar que las imágenes se adapten */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Grid responsive para productos */
+.row {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.row > * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .shadow-sm {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
 }
@@ -380,70 +404,347 @@ section h3::after {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
 }
 
-/* --- RESPONSIVE --- */
-@media (max-width: 991.98px) {
-  .navbar .container {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-  .navbar-brand {
-    margin-bottom: 0.5rem;
-  }
-  .navbar .nav-link {
-    display: block;
-    margin: 0.25rem 0;
-    width: 100%;
-    text-align: left;
-  }
-  .navbar .d-flex {
-    width: 100%;
-  }
-}
+/* --- RESPONSIVE PARA PC/PORTÁTILES Y MÓVILES --- */
 
-@media (max-width: 767.98px) {
-  .container,
-  .container-fluid {
-    max-width: 100% !important;
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+/* MÓVILES - Hasta 768px (tablets y celulares) */
+@media (max-width: 768px) {
+  /* Navbar móvil */
+  .navbar {
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
-  .navbar .container {
-    padding-left: 4px !important;
-    padding-right: 4px !important;
+
+  .navbar-brand {
+    font-size: 1rem;
   }
-  .card img {
-    height: 250px;
-    object-fit: contain;
-    padding: 8px;
+
+  .navbar-brand img {
+    height: 30px;
+    margin-right: 8px;
   }
-  h1,
+
+  .navbar .nav-link {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0.2rem 0;
+  }
+
+  /* Contenedores móviles */
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Títulos móviles */
+  h1 {
+    font-size: 1.5rem;
+  }
+
   h2 {
     font-size: 1.3rem;
   }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Cards móviles */
+  .card {
+    margin-bottom: 1rem;
+    border-radius: 12px;
+  }
+
+  .card img {
+    height: 220px;
+    padding: 8px;
+  }
+
+  .card-body {
+    padding: 0.8rem;
+  }
+
+  .card-header {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  /* Botones móviles */
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
   .btn-lg {
     font-size: 1rem;
-    padding: 0.5rem 1.2rem;
+    padding: 0.6rem 1.3rem;
+  }
+
+  /* Tablas móviles */
+  .table {
+    font-size: 0.85rem;
+  }
+
+  .table-dark th {
+    padding: 0.6rem 0.4rem;
+    font-size: 0.85rem;
+  }
+
+  .table-bordered th,
+  .table-bordered td {
+    padding: 0.5rem 0.3rem;
+    font-size: 0.85rem;
+  }
+
+  .table td.fw-bold {
+    font-size: 0.9rem;
+  }
+
+  .table-responsive {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  /* Imágenes de diagramas móviles */
+  .organigrama-img,
+  .macroproceso-img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  /* Secciones móviles */
+  section {
+    margin-bottom: 1.5rem;
+  }
+
+  section h3::after {
+    width: 60px;
+    height: 2px;
+  }
+
+  /* Footer móvil */
+  .footer {
+    font-size: 0.85rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+
+  /* Alerts móviles */
+  .alert-success,
+  .alert-info,
+  .alert-warning {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  /* Hero section móvil */
+  .hero-section {
+    min-height: 50vh !important;
+    padding: 2rem 1rem !important;
+  }
+
+  /* Grid de productos móvil */
+  .row > [class*='col-'] {
+    margin-bottom: 1rem;
   }
 }
 
-@media (max-width: 575.98px) {
-  .navbar-brand img {
-    height: 28px;
-    margin-right: 6px;
+/* PC Y PORTÁTILES - Desde 769px en adelante */
+@media (min-width: 769px) {
+  /* Navbar escritorio */
+  .navbar {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
   }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .navbar .nav-link {
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+  }
+
+  /* Contenedores escritorio */
+  .container {
+    max-width: 1200px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  /* Cards escritorio */
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
   .card img {
-    height: 200px;
-    object-fit: contain;
+    height: 350px;
+    padding: 10px;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+  }
+
+  /* Tablas escritorio */
+  .table-dark th {
+    padding: 0.75rem;
+  }
+
+  .table-bordered th,
+  .table-bordered td {
+    padding: 0.65rem;
+  }
+
+  /* Imágenes de diagramas escritorio */
+  .organigrama-img,
+  .macroproceso-img {
+    width: 70%;
+    padding: 20px;
+  }
+
+  .organigrama-img:hover,
+  .macroproceso-img:hover {
+    transform: scale(1.02);
+  }
+
+  /* Secciones escritorio */
+  section {
+    margin-bottom: 2rem;
+  }
+
+  /* Hero section escritorio */
+  .hero-section {
+    min-height: 70vh;
+    padding: 3rem 2rem;
+  }
+
+  /* Grid de productos con hover effects */
+  .card:hover img {
+    transform: scale(1.02);
+  }
+}
+
+/* PANTALLAS EXTRA GRANDES - Más de 1400px */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .card img {
+    height: 380px;
+  }
+
+  .organigrama-img,
+  .macroproceso-img {
+    width: 60%;
+  }
+}
+
+/* MÓVILES PEQUEÑOS - Hasta 480px */
+@media (max-width: 480px) {
+  .navbar {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand img {
+    height: 25px;
+    margin-right: 5px;
+  }
+
+  .navbar .nav-link {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .container {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+  }
+
+  h3 {
+    font-size: 1.05rem;
+  }
+
+  .card {
+    border-radius: 10px;
+  }
+
+  .card img {
+    height: 180px;
     padding: 5px;
   }
-  .footer {
-    font-size: 0.9rem;
-    padding: 1rem 0.5rem;
+
+  .card-body {
+    padding: 0.6rem;
   }
-  h1,
-  h2 {
-    font-size: 1rem;
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .table {
+    font-size: 0.75rem;
+  }
+
+  .table-dark th,
+  .table-bordered th,
+  .table-bordered td {
+    padding: 0.4rem 0.2rem;
+    font-size: 0.75rem;
+  }
+
+  section h3::after {
+    width: 50px;
   }
 }
